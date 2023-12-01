@@ -30,12 +30,11 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    
-  },
-  "devDependencies": {
     "@nuxt/kit": "^3.8.2",
     "defu": "^6.1.3",
     "uncsrf": "^1.1.1",
+  },
+  "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/schema": "^3.8.2",
     "@types/node": "^20.10.0",
