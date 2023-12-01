@@ -40,7 +40,8 @@
     "@nuxt/schema": "^3.8.2",
     "@types/node": "^20.10.0",
     "eslint": "^8.54.0",
-    "nuxt": "^3.8.2"
+    "nuxt": "^3.8.2",
+    "@nuxt/module-builder": "latest"
   },
   "repository": {
     "type": "git",
