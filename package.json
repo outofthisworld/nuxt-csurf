@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "build": "nuxt-module-build",
+    "prepare": "npm run build",
     "dev": "nuxi dev playground",
     "lint": "eslint --ext .js,.ts,.vue .",
     "prepack": "yarn build",
