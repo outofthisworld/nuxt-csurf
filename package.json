@@ -1,49 +1,49 @@
 {
-  "name": "nuxt-csurf",
-  "version": "1.3.2",
-  "description": "Nuxt Cross-Site Request Forgery (CSRF) Prevention",
-  "keywords": [
-    "nuxt",
-    "csrf",
-    "module"
-  ],
-  "author": "morgbn",
-  "license": "MIT",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+    "name": "nuxt-csurf",
+    "version": "1.3.2",
+    "description": "Nuxt Cross-Site Request Forgery (CSRF) Prevention",
+    "keywords": [
+        "nuxt",
+        "csrf",
+        "module"
+    ],
+    "author": "morgbn",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/module.mjs",
+            "require": "./dist/module.cjs"
+        }
+    },
+    "main": "./dist/module.cjs",
+    "types": "./dist/types.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "nuxt-module-build",
+        "prepare": "nuxt-module-build",
+        "dev": "nuxi dev playground",
+        "lint": "eslint --ext .js,.ts,.vue .",
+        "prepack": "yarn build",
+        "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+    },
+    "dependencies": {
+        "@nuxt/kit": "^3.8.2",
+        "defu": "^6.1.3",
+        "uncsrf": "^1.1.1"
+    },
+    "devDependencies": {
+        "@nuxt/eslint-config": "^0.2.0",
+        "@nuxt/schema": "^3.8.2",
+        "@types/node": "^20.10.0",
+        "eslint": "^8.54.0",
+        "nuxt": "^3.8.2",
+        "@nuxt/module-builder": "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/morgbn/nuxt-csurf.git"
     }
-  },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "nuxt-module-build",
-    "prepare": "nuxt-module-build",
-    "dev": "nuxi dev playground",
-    "lint": "eslint --ext .js,.ts,.vue .",
-    "prepack": "yarn build",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
-  },
-  "dependencies": {
-    "@nuxt/kit": "^3.8.2",
-    "defu": "^6.1.3",
-    "uncsrf": "^1.1.1",
-  },
-  "devDependencies": {
-    "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/schema": "^3.8.2",
-    "@types/node": "^20.10.0",
-    "eslint": "^8.54.0",
-    "nuxt": "^3.8.2",
-    "@nuxt/module-builder": "latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/morgbn/nuxt-csurf.git"
-  }
 }
